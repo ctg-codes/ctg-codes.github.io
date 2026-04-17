@@ -1,0 +1,103 @@
+/* Background Image for Whole Page */
+body {
+    background-image: url("background.jpg");  /* Change to your image name */
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: white;   /* Font color matches darker background */
+}
+
+/* Container */
+#container {
+    width: 90%;
+    margin: auto;
+}
+
+/* Header */
+#hd {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 50px;
+    margin: 10px;
+    opacity: 0.8;
+    text-align: center;
+}
+
+/* Left Navigation */
+#lnav {
+    background-color: #2c3e50;
+    width: 20%;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    opacity: 0.8;
+}
+
+/* Right Navigation */
+#rnav {
+    background-color: #2a88e6;
+    width: 20%;
+    float: right;
+    padding: 10px;
+    margin: 10px;
+    opacity: 0.8;
+}
+
+/* Body */
+#bd {
+    background-color: rgb(202, 55, 202);
+    margin: 10px 25%;
+    padding: 10px;
+    opacity: 0.8;
+}
+
+/* Footer */
+#ft {
+    clear: both;
+    background-color: #000;
+    padding: 10px;
+    margin: 10px;
+    opacity: 0.8;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid white;
+    padding: 5px;
+}
+
+/* Hyperlink Styling */
+a {
+    color: yellow;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+a:hover {
+    font-size: 18px;
+    color: yellow;
+}
+
+a:visited {
+    color: lightgray;
+}
+
+/* Horizontal Footer List */
+.hList {
+    text-align: center;
+    position: relative;
+}
+
+.hList ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.hList li {
+    display: inline;
+    margin: 0px 10px;
+}
