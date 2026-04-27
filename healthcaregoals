@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Healthcare Reform Plan</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b1220;
+      color: #ffffff;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p.subtitle {
+      color: #b3b3b3;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #111a2e;
+      border: 1px solid #1f2a44;
+      border-radius: 12px;
+      padding: 18px;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+    }
+
+    .card h2 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    ul {
+      padding-left: 18px;
+      color: #cbd5e1;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 0.85rem;
+      color: #6b7280;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Healthcare Reform Plan</h1>
+    <p class="subtitle">
+      A structured policy blueprint for improving affordability, access, and efficiency in healthcare.
+    </p>
+
+    <div class="grid" id="grid"></div>
+
+    <div class="footer">
+      Built as a policy outline demo for GitHub deployment.
+    </div>
+  </div>
+
+  <script>
+    const sections = [
+      {
+        title: "Lower and Stabilize Costs",
+        items: [
+          "Require price transparency across hospitals and insurers",
+          "Negotiate lower prescription drug prices",
+          "Limit surprise billing and facility fees"
+        ]
+      },
+      {
+        title: "Fix the Insurance System",
+        items: [
+          "Simplify insurance plan structures",
+          "Strengthen prior authorization rules",
+          "Expand public insurance options"
+        ]
+      },
+      {
+        title: "Expand Coverage Gaps",
+        items: [
+          "Broaden Medicaid expansion",
+          "Increase subsidies for middle-income families",
+          "Expand preventive care coverage"
+        ]
+      },
+      {
+        title: "Focus on Prevention",
+        items: [
+          "Invest in primary care workforce",
+          "Promote early screening and chronic care",
+          "Integrate mental health into primary care"
+        ]
+      },
+      {
+        title: "Prescription Drug Reform",
+        items: [
+          "Cap essential medication costs",
+          "Reform pharmacy benefit managers",
+          "Encourage generic drug competition"
+        ]
+      },
+      {
+        title: "Hospital System Efficiency",
+        items: [
+          "Improve cost transparency",
+          "Shift to value-based care models",
+          "Support rural hospital funding"
+        ]
+      },
+      {
+        title: "Mental Health Reform",
+        items: [
+          "Enforce mental health parity",
+          "Expand behavioral health services",
+          "Integrate screening into primary care"
+        ]
+      },
+      {
+        title: "Administrative Simplification",
+        items: [
+          "Standardize billing systems",
+          "Improve electronic health record interoperability",
+          "Reduce paperwork burden"
+        ]
+      },
+      {
+        title: "Public Health Investment",
+        items: [
+          "Strengthen disease prevention systems",
+          "Expand vaccination programs",
+          "Improve environmental health standards"
+        ]
+      }
+    ];
+
+    const grid = document.getElementById("grid");
+
+    sections.forEach(section => {
+      const card = document.createElement("div");
+      card.className = "card";
+
+      const title = document.createElement("h2");
+      title.textContent = section.title;
+
+      const list = document.createElement("ul");
+
+      section.items.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        list.appendChild(li);
+      });
+
+      card.appendChild(title);
+      card.appendChild(list);
+      grid.appendChild(card);
+    });
+  </script>
+</body>
+</html>
